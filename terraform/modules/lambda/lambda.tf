@@ -4,18 +4,18 @@
 #   handler       = "index.handler"
 #   runtime       = "python3.11"
 
-#   filename      = "lambda_function.zip"
+# #   filename      = "lambda_function.zip"
 
-#   source_code_hash = filebase64sha256("lambda_function.zip")
+# #   source_code_hash = filebase64sha256("lambda_function.zip")
 
-#   environment {
-#     variables = {
-#       DYNAMODB_TABLE = aws_dynamodb_table.anf_table.name
-#     }
-#   }
+# #   environment {
+# #     variables = {
+# #       DYNAMODB_TABLE = aws_dynamodb_table.anf_table.name
+# #     }
+# #   }
 
 #   vpc_config {
-#     subnet_ids         = [aws_subnet.anf_private_subnet_1.id, aws_subnet.anf_private_subnet_2.id]
+#     subnet_ids         = [aws_subnet.anf_private_subnet_a.id, aws_subnet.anf_private_subnet_b.id]
 #     security_group_ids = [aws_security_group.anf_lambda_sg.id]
 #   }
 

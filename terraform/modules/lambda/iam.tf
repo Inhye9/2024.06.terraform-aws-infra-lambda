@@ -36,7 +36,8 @@ resource "aws_iam_policy" "lambda_policy" {
         Action = [
           "dynamodb:*",
           "logs:*",
-          "cloudwatch:*"
+          "cloudwatch:*", 
+          "ec2:*"
         ]
         Effect   = "Allow"
         Resource = "*"

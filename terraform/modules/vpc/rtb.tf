@@ -37,6 +37,10 @@ resource "aws_route_table_association" "anf_public_rt_assoc_1" {
   route_table_id = aws_route_table.anf_public_rt.id
 }
 
+resource "aws_route_table_association" "anf_public_rt_assoc_2" {
+  subnet_id      = aws_subnet.anf_public_subnet_b.id
+  route_table_id = aws_route_table.anf_public_rt.id
+}
 # ------------------------------------------------------------------------
 # Private Route Table
 # ------------------------------------------------------------------------
@@ -62,5 +66,10 @@ resource "aws_route" "anf_private_route" {
 
 resource "aws_route_table_association" "anf_private_rt_assoc_1" {
   subnet_id      = aws_subnet.anf_private_subnet_a.id
+  route_table_id = aws_route_table.anf_private_rt.id
+}
+
+resource "aws_route_table_association" "anf_private_rt_assoc_2" {
+  subnet_id      = aws_subnet.anf_private_subnet_b.id
   route_table_id = aws_route_table.anf_private_rt.id
 }
