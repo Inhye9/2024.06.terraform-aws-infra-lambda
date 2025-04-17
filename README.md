@@ -69,7 +69,7 @@ terraform-aws-infra-lambda/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/terraform-aws-infra.git
+git clone https://github.com/your-username/2024.06.terraform-aws-infra.git
 cd terraform-aws-infra
 ```
 
