@@ -11,7 +11,7 @@ This repository contains a Terraform configuration to provision basic AWS infras
 
 The purpose of this project is to demonstrate infrastructure-as-code (IaC) practices using Terraform.
 
----
+
 
 ## 🧱 Components
 
@@ -23,9 +23,11 @@ The purpose of this project is to demonstrate infrastructure-as-code (IaC) pract
 - **IAM**: Role and policy for Lambda execution
 - **Lambda**: Sample AWS Lambda function deployed with IAM role
 
----
+
 
 ## 📁 Project Structure
+
+```bash
 terraform-aws-infra-lambda/
 ├── README.md
 ├── envrionments/ 
@@ -50,6 +52,9 @@ terraform-aws-infra-lambda/
 |   ├── tag.tf
 |   ├── vpc.tf
 |   └── variables.tf 
+```
+
+
 
 ## ⚙️ Requirements
 
@@ -57,7 +62,7 @@ terraform-aws-infra-lambda/
 - AWS CLI configured (`aws configure`)
 - An AWS account with access key (You need to make your own access key!)
 
----
+
 
 ## 🚀 How to Use
 
@@ -83,3 +88,7 @@ terraform plan -var-file=test.tfvars
 terraform apply -var-file=test.tfvars 
 ``` 
 
+## 📌 Note 
+- Default values can be customized via variable.tf      
+- All secrets and proprietary information have been removed
+- This is a simplified example intended for demo or learning purposes
